@@ -1,0 +1,10 @@
+{% extends "flashcards/base.html" %}
+{% block title %}
+  {{ flashcard.front_text }} - Flashcards App
+{% endblock title %}
+{% block content %}
+  <h1>{{ flashcard.front_text }}</h1>
+  {% if flashcard.comment %}
+    <p>{{ flashcard.comment }}</p>
+  {% endif %}
+{% endblock content %}

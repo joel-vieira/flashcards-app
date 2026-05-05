@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>
+      {% block title %}
+        Flashcards App
+      {% endblock title %}
+    </title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="description"
+          content="An application to learn through flashcards and SRS" />
+    <meta name="keywords"
+          content="flascards, srs, learning, language learning" />
+  </head>
+  <body>
+    <header class="header">
+    </header>
+    <main>
+      <div class="container">
+        {% block content %}
+        {% endblock content %}
+      </div>
+    </main>
+    <footer class="footer">
+    </footer>
+  </body>
+</html>

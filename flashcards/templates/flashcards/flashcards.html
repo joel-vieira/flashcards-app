@@ -1,0 +1,18 @@
+{% extends "flashcards/base.html" %}
+{% block title %}
+  My Flashcards - Flashcards App
+{% endblock title %}
+{% block content %}
+  <h1>My Flashcards</h1>
+  {% if flashcards %}
+    <ul>
+        {% for flashcard in flashcards %}
+            <li>
+                <a href="{% url 'flashcards:flashcard' flashcard.deck.id flashcard.id %}">{{ flashcard.front_text }}</a>
+            </li>
+        {% endfor %}
+    </ul>
+  {% else %}
+    <p>This deck is empty.</p>
+  {% endif %}
+{% endblock content %}

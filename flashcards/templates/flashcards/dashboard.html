@@ -1,0 +1,8 @@
+{% extends "flashcards/base.html" %}
+{% block title %}
+  Dashboard - Flashcards App
+{% endblock title %}
+{% block content %}
+  <h1>My Dashboard</h1>
+  <a href="{% url 'flashcards:decks' %}">See all decks</a>
+{% endblock content %}
