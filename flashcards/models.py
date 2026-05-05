@@ -4,6 +4,9 @@ from django.db import models
 class Deck(models.Model):
     name = models.CharField("Name", max_length=50)
 
+    def __str__(self):
+        return self.name
+
 
 class Flashcard(models.Model):
     # Front
@@ -19,3 +22,6 @@ class Flashcard(models.Model):
     # Metadata
     created_at = models.DateTimeField("Creation Datetime", auto_now_add=True)
     modified_at = models.DateTimeField("Modification Datetime", auto_now=True)
+
+    def __str__(self):
+        return self.front_text
