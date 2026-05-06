@@ -1,9 +1,9 @@
 {% extends "flashcards/base.html" %}
 {% block title %}
-  My Flashcards - Flashcards App
+  {{ deck.name }} Flashcards - Flashcards App
 {% endblock title %}
 {% block content %}
-  <h1>My Flashcards</h1>
+  <h1>{{ deck.name }} Flashcards</h1>
   {% if flashcards %}
     <ul>
         {% for flashcard in flashcards %}
