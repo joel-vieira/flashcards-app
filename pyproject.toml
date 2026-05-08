@@ -21,6 +21,14 @@ indent = 2
 
 [tool.ruff]
 line-length = 120
+extend-exclude = [
+    "migrations",
+    "flashcards_app",
+    "manage.py"
+]
+
+[tool.ruff.format]
+quote-style = "single"
 
 [tool.ruff.lint]
 select = ["E", "F", "I", "N", "W"]

@@ -4,7 +4,5 @@
 {% endblock title %}
 {% block content %}
   <h1>{{ flashcard.front_text }}</h1>
-  {% if flashcard.comment %}
-    <p>{{ flashcard.comment }}</p>
-  {% endif %}
+  {% if flashcard.comment %}<p>{{ flashcard.comment }}</p>{% endif %}
 {% endblock content %}

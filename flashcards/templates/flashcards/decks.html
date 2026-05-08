@@ -6,11 +6,11 @@
   <h1>My Decks</h1>
   {% if decks %}
     <ul>
-        {% for deck in decks %}
-            <li>
-                <a href="{% url 'flashcards:flashcards' deck.id %}">{{ deck.name }}</a>
-            </li>
-        {% endfor %}
+      {% for deck in decks %}
+        <li>
+          <a href="{% url 'flashcards:flashcards' deck.id %}">{{ deck.name }}</a>
+        </li>
+      {% endfor %}
     </ul>
   {% else %}
     <p>You don't have any decks yet.</p>
